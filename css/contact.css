@@ -1,0 +1,165 @@
+:root {
+    --color-primary:#6c63ff;
+    --color-success:#00bf8e;
+    --color-warning:#f7c94b;
+    --color-danger:#f75842;
+    --color-danger-variant:rgba(247, 88, 66, 0.4);
+    --color-white:#fff;
+    --color-light:rgba(255, 255, 255, 0.7);
+    --color-black:#000;
+    --color-bg:#1f2641;
+    --color-bg1:#2e3267;
+    --color-bg2:#424890;
+
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+
+    --transition: all 400ms ease;
+}
+
+.contact {
+    position: relative;
+    top: 12rem;
+    width: 90%;
+    height: 30rem;
+    background-color: var(--color-bg1);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.size {
+    padding: 0;
+    margin: 0;
+    /* height: 15rem; */
+}
+
+.title {
+    padding: 1rem;
+    text-align: center;
+}
+
+.contact-Us {
+    background-color: var(--color-primary);
+    padding: 3rem;
+    margin: 2rem;
+    position: relative;
+    top: -12rem;
+    border-radius: 3rem;
+}
+
+.contact-info {
+    display: flex;
+    padding-top: 1rem;
+}
+
+.logo {
+    padding-right: 2rem;
+}
+
+.contact-logo {
+    display: flex;
+    padding-top: 2rem;
+    justify-content: space-around;
+}
+
+.contact-logo li {
+    background: #424890;
+    text-align: center;
+    width: 2rem;
+    border-radius: 5rem;
+}
+.contact-logo li:hover {
+    background: #00bf8e;
+}
+
+.formulaire-right {
+    margin-right: 1rem;
+    padding: 1rem;
+}   
+
+.form-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    height: 4rem;
+}
+
+.adresse {
+    height: 4rem;
+    text-align: center;
+}
+
+.text {
+    height: 8rem;
+}
+
+.form {
+    width: 100%;
+    display: grid;
+    height: 5rem;
+    gap: 1.2rem;
+}
+
+input,
+textarea {
+    background: var(--color-bg);
+    padding: 1rem;
+    color: white;
+}
+
+.btn {
+    width: 10rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 990px) {
+
+    .contact-Us {
+        background-color: var(--color-primary);
+        padding: 3rem;
+        margin: 2rem;
+        border-radius: 3rem;
+    }
+
+    .size {
+        height: auto;
+    }
+
+    .contact {
+        width: 90%;
+        height: 70rem;
+        background-color: var(--color-bg1);
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr ;
+        border-radius: 3rem;
+    }
+
+
+    .formulaire-right {
+        position: relative;
+        top: -14rem;
+    }   
+
+    .btn {  
+        margin: auto
+        ;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    .contact {
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+
+    .btn {  
+        margin: auto;
+    }
+
+}
